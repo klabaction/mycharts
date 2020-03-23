@@ -40,8 +40,7 @@ spec:
   template:
     metadata:
       labels:
-        name: "cloudant-deployment-{{ .Values.username }}"
-        version: v1
+        app: "cloudant-deployment-{{ .Values.username }}"
     spec:
       containers:
       - name: "cloudant-db-{{ .Values.username }}"
