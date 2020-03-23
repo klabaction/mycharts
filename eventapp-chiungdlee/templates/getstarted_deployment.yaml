@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: "getstartedjava-{{ .Values.username }}"
-        image: "de.icr.io/cr-namespace-{{ .Values.username }}/getstartedjava:{{ .Values.getstartedtag }}"
+        image: "jp.icr.io/cr-namespace-{{ .Values.username }}/getstartedjava:{{ .Values.getstartedtag }}"
         env:
           - name: VERSION
             value: "1"
