@@ -1,5 +1,5 @@
 kind: Deployment
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 metadata:
   name: "getstartedjava-{{ .Values.username }}"
   labels:
@@ -7,6 +7,9 @@ metadata:
     version: v1
 spec:
   replicas: 1
+  selector:
+   matchLabels:
+    app: "getstartedjava-{{ .Values.username }}"
   template:
     metadata:
       annotations:

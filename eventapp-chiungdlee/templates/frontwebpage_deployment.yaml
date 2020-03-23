@@ -1,9 +1,12 @@
 kind: Deployment
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 metadata:
   name: "frontwebpage-{{ .Values.username }}"
 spec:
   replicas: 1
+  selector:
+   matchLabels:
+    app: "frontwebpage-{{ .Values.username }}"
   template:
     metadata:
       labels:
