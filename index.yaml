@@ -3,11 +3,11 @@ entries:
   eventapp-chiungdlee:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2020-03-23T17:14:36.91315+09:00
+    created: 2020-03-23T17:21:33.664926+09:00
     description: A Helm chart for Kubernetes
-    digest: 1439a13d919f3fc7c9e4d090a671602fff7c0988416c51d50946cbd5c2f08ba5
+    digest: 112f5e450a58f4c1f09ed8f58de7fdf906af42c57076732ed73ac063d11e098d
     name: eventapp-chiungdlee
     urls:
     - https://klabaction.github.io/mycharts/eventapp-chiungdlee-0.1.0.tgz
     version: 0.1.0
-generated: 2020-03-23T17:14:36.91272+09:00
+generated: 2020-03-23T17:21:33.664484+09:00
