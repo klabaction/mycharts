@@ -36,7 +36,7 @@ spec:
   replicas: 1
   selector:
    matchLabels:
-    app: "getstartedjava-{{ .Values.username }}"
+    app: "cloudant-deployment-{{ .Values.username }}"
   template:
     metadata:
       labels:
@@ -63,6 +63,7 @@ spec:
           privileged: true
         ports:
           - containerPort: 80
+            name: http
         volumeMounts:
         - name: "{{ .Values.username }}-pv"
           mountPath: /srv
