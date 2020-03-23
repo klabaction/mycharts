@@ -1,4 +1,4 @@
-kind: Deployment
+Wkind: Deployment
 apiVersion: apps/v1
 metadata:
   name: "frontwebpage-{{ .Values.username }}"
@@ -30,7 +30,7 @@ spec:
             memory: 300Mi
         env:
         - name: API_URL
-          value: "http://frankfurtcluster.ams03.containers.appdomain.cloud/{{ .Values.username }}"
+          value: "http://academycluster.seo01.containers.appdomain.cloud/{{ .Values.username }}"
 ---
 kind: Service
 apiVersion: v1
